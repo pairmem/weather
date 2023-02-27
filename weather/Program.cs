@@ -1,22 +1,9 @@
 ﻿using System.Net.Http.Json;
-using System.Runtime.ConstrainedExecution;
 using System.Text.Json.Serialization;
 
 namespace HttpClientExtensionMethods
 {
-    /* public class City
-     {
-         public float Latitude { get; set; }
-         public float Longitude { get; set; }
-         //public float  current_weather.Windspeed { get; set; }
-         public string? Timezone { get; set; }
-         public float Temperature { get; set; }
-
-         //public string? Username { get; set; }
-         //public string? Email { get; set; }
-     } */
-
-    public class City
+      public class City
     {
         public float Latitude { get; set; }
 
@@ -24,6 +11,7 @@ namespace HttpClientExtensionMethods
 
         [JsonPropertyName("current_weather")]
         public CurrentWeather? CurrentWeather { get; set; }
+        //public string? Username { get; set; }
     }
 
     public class CurrentWeather
